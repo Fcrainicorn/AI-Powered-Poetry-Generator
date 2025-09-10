@@ -20,10 +20,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      # This is the corrected step to match your code's variable name
       - name: Build with API Key
-        run: REACT_APP_GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }} npm run build
+        run: VITE_API_KEY=${{ secrets.GEMINI_API_KEY }} npm run build
         env:
-          REACT_APP_GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          VITE_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
