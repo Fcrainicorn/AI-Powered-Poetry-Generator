@@ -21,7 +21,7 @@ export default function PoemBox() {
             const text = result.response.text();
             setResponse(text);
             setError(null);
-            setPoem(result.response.text());
+            setResponse(result.response.text());
         } catch (err) {
             console.error("API Error:", err);    
             const errorMessage = getErrorMessage(err); 
