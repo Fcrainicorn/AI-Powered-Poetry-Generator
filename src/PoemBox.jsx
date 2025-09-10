@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { poemStyles } from './styles.js';
+import { getErrorMessage } from "./utils/errorMessages";
 
 export default function PoemBox() {
     const [response, setResponse] = useState("");
@@ -20,8 +21,12 @@ export default function PoemBox() {
             const text = result.response.text();
             setResponse(text);
             setError(null);
+            setPoem(result.response.text());
         } catch (err) {
-            setError(err.message);
+            console.error("API Error:", err);
+            const errorMessage = getErrorMessage(err);
+            setResponse(errorMessage);
+            setError(errorMessage);
         }
     };
     
