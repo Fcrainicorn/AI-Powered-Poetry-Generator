@@ -18,12 +18,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      # This step builds the project, passing the key from the env block
       - name: Build
-        run: VITE_API_KEY=${{ secrets.VITE_API_KEY }} npm run build
+        run: npm run build
+        env:
+          VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          cname: your-custom-domain.com # Optional, if you have a custom domain
