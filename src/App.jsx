@@ -3,15 +3,13 @@ import './App.css';
 import { useState } from 'react'
 
 
-function App() {
+export default function App() {
 
   return (
-    <>
+    <div>
 
       <PoemBox />
     
-    </>
-  )
+    </div>
+  );
 }
-
-export default App
