@@ -23,8 +23,8 @@ export default function PoemBox() {
             setError(null);
             setPoem(result.response.text());
         } catch (err) {
-            console.error("API Error:", err);
-            const errorMessage = getErrorMessage(err);
+            console.error("API Error:", err);    
+            const errorMessage = getErrorMessage(err); 
             setResponse(errorMessage);
             setError(errorMessage);
         }
