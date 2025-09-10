@@ -28,7 +28,7 @@ Backend: Google Gemini API
 
 To run this project locally, clone the repository and install the dependencies.
 
-git clone <repository-url>
+git clone https://github.com/Fcrainicorn/AI-Powered-Poetry-Generator.git
 
 cd AI-Powered-Poetry-Generator
 
