@@ -18,9 +18,6 @@ Press Enter: Once you've typed the name, press the "Enter" key on your keyboard 
 
 Wait for the Magic: The application will process your request. A poem should appear in a minute.
 
-## 🌐 Live Demo  
-Try it here! (http://localhost:5173/)
-
 ## Tech Stack
 
 Frontend: React, Vite, HTML, CSS, JavaScript
