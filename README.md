@@ -1,12 +1,40 @@
-# React + Vite
+# AI-Powered Poetry Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a web application that generates unique poems based on user prompts. The project demonstrates my skills in front-end development, API integration, and user interface design.
 
-Currently, two official plugins are available:
+## Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Natural Language Processing: Integrates with the Google Gemini API to generate creative and contextually relevant poetry based on a user's prompt.
 
-## Expanding the ESLint configuration
+Dynamic Content: The application fetches and displays a new poem with each request, providing a fresh experience.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Interactive UI: A clean, user-friendly interface built with React that allows users to input prompts and view generated content seamlessly.
+
+## How to Use
+
+Enter a Poet's Name: Type the name of a poet, writer, or artist whose style you want the poem to be in.
+
+Press Enter: Once you've typed the name, press the "Enter" key on your keyboard to generate the poem.
+
+Wait for the Magic: The application will process your request. A poem should appear in a minute.
+
+## Tech Stack
+
+Frontend: React, Vite, HTML, CSS, JavaScript
+
+Backend: Google Gemini API
+
+## Getting Started
+
+To run this project locally, clone the repository and install the dependencies.
+
+git clone <repository-url>
+
+cd AI-Powered-Poetry-Generator
+
+npm install
+
+npm run dev
+
+
+
