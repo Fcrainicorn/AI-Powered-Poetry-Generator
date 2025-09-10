@@ -1,32 +1,49 @@
 # AI-Powered Poetry Generator
 
-This is a web application that generates unique poems based on user prompts. The project demonstrates my skills in front-end development, API integration, and user interface design.
+AI-Powered Poetry Generator is a React-based web app that creates original poems using Google’s Gemini API. Users can enter the name of a poet to generate verses inspired by their style, while the interface dynamically shifts colors and fonts every few minutes for a fresh, immersive reading experience. This project showcases my ability to combine front-end development with real-world API integration to deliver interactive and creative applications.
 
-## Key Features
+## 🚀 Live Demo
+Try it here: [AI-Powered Poetry Generator](https://ai-powered-poetry-generator-git-master-fcrainicorns-projects.vercel.app)  
 
-Natural Language Processing: Integrates with the Google Gemini API to generate creative and contextually relevant poetry based on a user's prompt.
+## ✨ Key Features
+- 🧠 **Natural Language Processing**: Integrates with the Google Gemini API to generate creative and contextually relevant poetry.  
+- 🎨 **Rotating Styles**: The design dynamically changes every two minutes with different fonts and colors.  
+- 🔄 **Dynamic Content**: Each request generates a fresh, unique poem.  
+- 💻 **Interactive UI**: Clean, user-friendly interface built with React.  
 
-Dynamic Content: The application fetches and displays a new poem with each request, providing a fresh experience.
+## 🛠 Tech Stack
+- **Frontend**: React, Vite, HTML, CSS, JavaScript  
+- **Backend**: Google Gemini API  
 
-Interactive UI: A clean, user-friendly interface built with React that allows users to input prompts and view generated content seamlessly.
+## 📖 How to Use
+1. **Enter a Poet’s Name**: Type the name of a poet, writer, or artist.  
+2. **Press Enter**: Generate a poem instantly.  
+3. **Enjoy**: The poem will appear shortly.  
 
-## How to Use
+## 🏗 Getting Started
 
-Enter a Poet's Name: Type the name of a poet, writer, or artist whose style you want the poem to be in.
+### 🔑 Environment Variables
+This project uses environment variables for API access.  
 
-Press Enter: Once you've typed the name, press the "Enter" key on your keyboard to generate the poem.
+1. In the root directory of the project, create a file named `.env`.
+   
+2. Add the following line to it:  
+VITE_API_KEY=your_api_key_here
 
-Wait for the Magic: The application will process your request. A poem should appear in a minute.
 
-## Tech Stack
+3. A `.env.example` file is included for reference. Rename it:
 
-Frontend: React, Vite, HTML, CSS, JavaScript
 
-Backend: Google Gemini API
+```bash
 
-## Getting Started
+cp .env.example .env
+```
+4. Obtain your API key from [Google AI Studio](https://aistudio.google.com/)
+.
 
-To run this project locally, clone the repository and install the dependencies.
+### ▶️ Run Locally
+
+```bash
 
 git clone https://github.com/Fcrainicorn/AI-Powered-Poetry-Generator.git
 
@@ -35,6 +52,11 @@ cd AI-Powered-Poetry-Generator
 npm install
 
 npm run dev
+```
+
+
+
+
 
 
 
